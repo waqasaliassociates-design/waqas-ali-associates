@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details | Waqas Ali Associates (WAA)</title>
+  <meta name="description" content="Explore the technical engineering specifications, structural design blueprints, and visual material galleries of Waqas Ali Associates' custom architecture works.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header & Sticky Navigation -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">WAQAS ALI</span>
+        <span class="logo-sub">ASSOCIATES</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-gold-outline btn-sm desktop-only">Consultation</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu" class="menu-icon-open"></i>
+          <i data-lucide="x" class="menu-icon-close"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="contact.html" class="btn-gold btn-md" style="display: inline-block; margin-top: 1.5rem; text-align: center; width: 100%;">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dynamic Inner Page Header -->
+    <section class="page-header bg-dark text-white" id="detail-header-section">
+      <div class="page-header-bg" id="detail-header-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="container text-center">
+        <span class="page-tag text-gold" id="detail-tag-location">MALIBU, USA</span>
+        <h1 class="page-title" id="detail-title">The Obsidian Villa</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-xs text-gold"></i> <a href="projects.html">Projects</a> <i data-lucide="chevron-right" class="icon-xs text-gold"></i> <span id="detail-breadcrumb-current">The Obsidian Villa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Specifications & Main Narrative -->
+    <section class="section-padding bg-light text-black">
+      <div class="container grid-3-7">
+        
+        <!-- Specs Info Box (Left Column on Desktop, Sticky) -->
+        <div class="project-specs-sidebar">
+          <div class="specs-card bg-dark text-white">
+            <h3 class="specs-card-title text-gold">Project Specs</h3>
+            
+            <ul class="specs-list">
+              <li>
+                <span class="spec-label">Client</span>
+                <span class="spec-value" id="spec-client">Sir Alexander Sterling</span>
+              </li>
+              <li>
+                <span class="spec-label">Location</span>
+                <span class="spec-value" id="spec-location">Malibu, California</span>
+              </li>
+              <li>
+                <span class="spec-label">Completed</span>
+                <span class="spec-value" id="spec-year">2025</span>
+              </li>
+              <li>
+                <span class="spec-label">Total GFA</span>
+                <span class="spec-value" id="spec-area">8,200 SQFT</span>
+              </li>
+              <li>
+                <span class="spec-label">Principal Lead</span>
+                <span class="spec-value" id="spec-lead">Waqas Ali</span>
+              </li>
+              <li>
+                <span class="spec-label">Services Provided</span>
+                <span class="spec-value" id="spec-services">Architecture, Interior, Project Management</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="sidebar-contact-teaser text-center" style="margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--color-gold-faded);">
+            <h4 class="teaser-title text-black" style="font-weight: 600; margin-bottom: 0.5rem;">Inspired by this work?</h4>
+            <p style="font-size: 0.85rem; color: #555; margin-bottom: 1rem;">Let WAA blueprint your custom property vision with identical precision.</p>
+            <a href="contact.html" class="btn-gold-outline btn-sm w-full">Request Quote</a>
+          </div>
+        </div>
+
+        <!-- Project Narrative Details (Right Column on Desktop) -->
+        <div class="project-story-content">
+          <span class="section-tag text-gold">THE CREATIVE PROCESS</span>
+          <h2 class="section-title text-black" id="detail-story-title">Bespoke Cliffside Luxury</h2>
+          
+          <div class="story-text" id="detail-story-text">
+            <p class="section-paragraph">The Obsidian Villa is a premier masterwork of modern residential architecture. Designed for private banking magnate Sir Alexander Sterling, the structure sits dramatically cantilevered over a sheer coastal cliff edge in Malibu, California.</p>
+            <p class="section-paragraph">Our primary engineering objective was to negotiate the steep, geologically unstable terrain without disrupting the native cliffside topology. The structural core utilizes twenty-two reinforced steel-concrete foundation piles drilled fifty meters into basalt bedrock, securing a massive multi-deck architectural framework that floats above the surf.</p>
+            
+            <h3 class="story-subheading" style="font-family: var(--font-serif); font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem; font-weight: 600;">The Material Matrix</h3>
+            <p class="section-paragraph">Reflecting the client's desire for an "unyielding, elegant presence," the facade is finished in charcoal-tinted concrete matrices, dark brushed titanium grids, and bespoke thermal panels. These materials ensure high resistance to salty ocean air and microclimatic heat grids, minimizing typical long-term coastal erosion.</p>
+            <p class="section-paragraph">Inside, the layout unfolds into a majestic open-plan grid, utilizing floating travertine stairwells, custom-forged metal fireplaces, and bespoke walnut cabinetry curated by Sarah Jenkins. Every light fitting, handle, and tile configuration is carefully calculated to deliver flawless visual luxury.</p>
+          </div>
+
+          <!-- Highlight Specs Box -->
+          <div class="dynamic-highlight-metrics bg-dark text-white grid-3-col" style="margin-top: 2.5rem; padding: 2rem; border-left: 4px solid var(--color-gold);">
+            <div class="metric-item">
+              <span class="metric-value text-gold" id="metric-1-val">12m</span>
+              <span class="metric-label" id="metric-1-lbl">Double-Height Ceilings</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value text-gold" id="metric-2-val">50m</span>
+              <span class="metric-label" id="metric-2-lbl">Cliff Bedrock Piling</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value text-gold" id="metric-3-val">A+++</span>
+              <span class="metric-label" id="metric-3-lbl">Energy Independence</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Visual Media Gallery -->
+    <section class="section-padding bg-dark text-white">
+      <div class="container text-center section-header">
+        <span class="section-tag">ARCHITECTURAL BLUEPRINTS</span>
+        <h2 class="section-title">Visual <span class="text-gold">Gallery</span></h2>
+        <p class="section-subtitle">Examine the high-resolution material closeups, interior perspectives, and landscape integrations of this masterpiece.</p>
+      </div>
+
+      <div class="container gallery-mosaic-grid" id="detail-gallery-container">
+        <!-- Gallery photos will be generated dynamically by JS -->
+        <div class="gallery-mosaic-item item-large">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Obsidian Villa Landscape" class="gallery-img-clickable" loading="lazy">
+        </div>
+        <div class="gallery-mosaic-item">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Obsidian Villa Interior Bedroom" class="gallery-img-clickable" loading="lazy">
+        </div>
+        <div class="gallery-mosaic-item">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Obsidian Villa Exterior Pool deck" class="gallery-img-clickable" loading="lazy">
+        </div>
+        <div class="gallery-mosaic-item">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Obsidian Villa Kitchen closeup" class="gallery-img-clickable" loading="lazy">
+        </div>
+        <div class="gallery-mosaic-item">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Obsidian Villa Architectural Blueprint Rendering" class="gallery-img-clickable" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+      <span class="lightbox-close" id="lightbox-close-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-main-img" alt="Enlarged gallery closeup">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <!-- Pagination / Prev-Next Links -->
+    <section class="section-padding bg-light text-black border-top-light">
+      <div class="container project-pagination-nav">
+        <a href="#" class="pagination-link prev" id="pag-prev-link">
+          <i data-lucide="arrow-left" class="icon-sm"></i>
+          <div class="pag-text-block">
+            <span class="pag-label">PREVIOUS PROJECT</span>
+            <span class="pag-project-name" id="pag-prev-name">Elysian Retreat</span>
+          </div>
+        </a>
+        <a href="projects.html" class="pagination-grid-icon" aria-label="Back to project grid">
+          <i data-lucide="grid" class="icon-md"></i>
+        </a>
+        <a href="#" class="pagination-link next" id="pag-next-link">
+          <div class="pag-text-block" style="text-align: right;">
+            <span class="pag-label">NEXT PROJECT</span>
+            <span class="pag-project-name" id="pag-next-name">Aurelia Plaza</span>
+          </div>
+          <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Footer Col 1 -->
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo">
+          <span class="logo-text">WAQAS ALI</span>
+          <span class="logo-sub">ASSOCIATES</span>
+        </a>
+        <p class="footer-desc">Crafting luxurious, sustainable, and iconographic structures. Elevating global architectural engineering with a modern, gold-standard aesthetic.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#residential">Residential Design</a></li>
+          <li><a href="services.html#commercial">Commercial Architecture</a></li>
+          <li><a href="services.html#interiors">Interior Architecture</a></li>
+          <li><a href="services.html#sustainability">Sustainable Engineering</a></li>
+          <li><a href="services.html#pm">Project Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Contact Office</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>Suite 750, Platinum Business Tower, Dubai, UAE</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <span>+971 4 555 1234</span>
+          </li>
+          <li>
+            <i data-lucide="mail"></i>
+            <span>info@waqasaliassociates.com</span>
+          </li>
+          <li>
+            <i data-lucide="clock"></i>
+            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright and Sub-bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Waqas Ali Associates. All Rights Reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Vanilla JavaScript Link -->
+  <script src="script.js"></script>
+</body>
+</html>

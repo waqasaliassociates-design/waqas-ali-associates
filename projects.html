@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio | Waqas Ali Associates (WAA) | Architectural Gallery</title>
+  <meta name="description" content="Explore Waqas Ali Associates' (WAA) extensive portfolio of luxury residential estates, landmark commercial plazas, and green sustainable buildings across the globe.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header & Sticky Navigation -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-text">WAQAS ALI</span>
+        <span class="logo-sub">ASSOCIATES</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn-gold-outline btn-sm desktop-only">Consultation</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu" class="menu-icon-open"></i>
+          <i data-lucide="x" class="menu-icon-close"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="projects.html" class="mobile-nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="contact.html" class="btn-gold btn-md" style="display: inline-block; margin-top: 1.5rem; text-align: center; width: 100%;">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inner Page Header -->
+    <section class="page-header bg-dark text-white">
+      <div class="page-header-bg" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="container text-center">
+        <span class="page-tag text-gold">OUR PORTFOLIO</span>
+        <h1 class="page-title">Masterpieces of <span class="text-gold">Form & Space</span></h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-xs text-gold"></i> <span>Projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery Grid & Filters -->
+    <section class="section-padding bg-light text-black">
+      <div class="container">
+        
+        <!-- Interactive Filter Bar -->
+        <div class="filter-bar" id="project-filters">
+          <button class="filter-btn active" data-filter="all">All Works</button>
+          <button class="filter-btn" data-filter="residential">Residential Estates</button>
+          <button class="filter-btn" data-filter="commercial">Commercial Landmarks</button>
+          <button class="filter-btn" data-filter="sustainable">Sustainable Spaces</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="portfolio-grid grid-3-col" id="portfolio-grid" style="margin-top: 3rem;">
+          
+          <!-- Project Card 1: Obsidian Villa -->
+          <div class="portfolio-item-card" data-category="residential">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="The Obsidian Villa, Malibu, USA" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">MALIBU, USA</span>
+                  <h4 class="project-name">The Obsidian Villa</h4>
+                  <p class="project-short-desc">Bespoke concrete-and-glass residence cantilevered over coastal cliffs.</p>
+                  <a href="project-details.html?id=obsidian" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2: Aurelia Plaza -->
+          <div class="portfolio-item-card" data-category="commercial">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Aurelia Plaza, Dubai, UAE" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">DUBAI, UAE</span>
+                  <h4 class="project-name">Aurelia Plaza</h4>
+                  <p class="project-short-desc">A fifteen-story sustainable commercial center and corporate headquarters.</p>
+                  <a href="project-details.html?id=aurelia" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Vera Eco-Pavilion -->
+          <div class="portfolio-item-card" data-category="sustainable">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Vera Eco-Pavilion, Munich, Germany" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">MUNICH, GERMANY</span>
+                  <h4 class="project-name">Vera Eco-Pavilion</h4>
+                  <p class="project-short-desc">Carbon-neutral multi-family complex utilizing active solar array technology.</p>
+                  <a href="project-details.html?id=vera" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4: Helios Penthouse -->
+          <div class="portfolio-item-card" data-category="residential">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80" alt="Helios Penthouse, London, UK" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">LONDON, UK</span>
+                  <h4 class="project-name">Helios Penthouse</h4>
+                  <p class="project-short-desc">Duplex luxury penthouse with customized white oak joinery and panoramic skylights.</p>
+                  <a href="project-details.html?id=helios" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5: The Lumina Gallery -->
+          <div class="portfolio-item-card" data-category="commercial">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Lumina Gallery, Paris, France" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">PARIS, FRANCE</span>
+                  <h4 class="project-name">Lumina Plaza</h4>
+                  <p class="project-short-desc">Innovative spatial exhibition gallery balancing active daylight patterns.</p>
+                  <a href="project-details.html?id=lumina" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 6: Elysian Wellness Retreat -->
+          <div class="portfolio-item-card" data-category="sustainable">
+            <div class="project-img-container">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Elysian Wellness Retreat, Bali, Indonesia" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <div class="project-info">
+                  <span class="project-category">BALI, INDONESIA</span>
+                  <h4 class="project-name">Elysian Retreat</h4>
+                  <p class="project-short-desc">Eco-luxury geothermal spa using local timber grids and smart micro-grids.</p>
+                  <a href="project-details.html?id=elysian" class="project-btn-arrow"><i data-lucide="arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio CTA -->
+    <section class="section-padding bg-dark text-white border-top-dark text-center">
+      <div class="container cta-container">
+        <span class="section-tag text-gold">COLLABORATE WITH WAA</span>
+        <h2 class="cta-title">Have a Custom Vision?</h2>
+        <p class="cta-desc">Whether designing high-end corporate landmarks, off-grid eco-lodges, or your legacy mansion, let our award-winning architects detail your blueprints.</p>
+        <a href="contact.html" class="btn-gold">Start Your Project Planning</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Footer Col 1 -->
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo">
+          <span class="logo-text">WAQAS ALI</span>
+          <span class="logo-sub">ASSOCIATES</span>
+        </a>
+        <p class="footer-desc">Crafting luxurious, sustainable, and iconographic structures. Elevating global architectural engineering with a modern, gold-standard aesthetic.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i data-lucide="pinterest"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Col 2 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Studio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Our Projects</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 3 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#residential">Residential Design</a></li>
+          <li><a href="services.html#commercial">Commercial Architecture</a></li>
+          <li><a href="services.html#interiors">Interior Architecture</a></li>
+          <li><a href="services.html#sustainability">Sustainable Engineering</a></li>
+          <li><a href="services.html#pm">Project Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Col 4 -->
+      <div class="footer-col">
+        <h4 class="footer-title">Contact Office</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>Suite 750, Platinum Business Tower, Dubai, UAE</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <span>+971 4 555 1234</span>
+          </li>
+          <li>
+            <i data-lucide="mail"></i>
+            <span>info@waqasaliassociates.com</span>
+          </li>
+          <li>
+            <i data-lucide="clock"></i>
+            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright and Sub-bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>&copy; 2026 Waqas Ali Associates. All Rights Reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Vanilla JavaScript Link -->
+  <script src="script.js"></script>
+</body>
+</html>
